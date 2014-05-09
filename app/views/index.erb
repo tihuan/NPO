@@ -1,23 +1,31 @@
-<div class="container">
-  <h1>Welcome to Sinatra!</h1>
-  <p>Hello, <%= em("world!") %></p>
+  <div id="container">
 
-  <table>
-    <tr>
-      <th>File Description</th>
-      <th>File Location</th>
-    </tr>
-    <tr>
-      <td>This view file</td>
-      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The layout file</td>
-      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The current controller</td>
-      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-  </table>
-</div>
+    <div id="needed" class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Items needed:</h3>
+      </div>
+
+      <ul class="list-group">
+        <li class="list-group-item">Item 1<span class="badge">14</span></li>
+        <li class="list-group-item">Item 2<span class="badge">3</span></li>
+        <li class="list-group-item">Item 3<span class="badge">8</span></li>
+        <li class="list-group-item">Item 4<span class="badge">2</span></li>
+        <li class="list-group-item">Item 5<span class="badge">1</span></li>
+      </ul>
+
+    </div>
+
+    <div id="acquired" class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title">Supplies onhand:</h3>
+        </div>
+      <ul class="list-group">
+        <li class="list-group-item">Item 6<span class="badge">5</li>
+        <li class="list-group-item">Item 7<span class="badge">2</li>
+        <li class="list-group-item">Item 8<span class="badge">7</li>
+        <li class="list-group-item">Item 9<span class="badge">3</li>
+        <li class="list-group-item">Item 10<span class="badge">9</li>
+      </ul>
+    </div>
+
+  </div>
